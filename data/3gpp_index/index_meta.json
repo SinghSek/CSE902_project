@@ -1,0 +1,22 @@
+{
+  "model": "Qwen/Qwen3-Embedding-4B",
+  "preset": "qwen3-4b",
+  "dim": 2560,
+  "query_prompt": "Instruct: Given a question about 3GPP mobile network specifications, retrieve specification passages that answer the question\nQuery: ",
+  "files": {
+    "/Users/jss/Desktop/CSE902_project/data/specs/ts_123167v170200p.pdf": {
+      "sha256": "4f812e413fc4c096a36cb5d5725a0ad1b62403365ba7dbb5dc78a81168b681a9",
+      "n_chunks": 121,
+      "spec": "23.167",
+      "version": "17.2.0",
+      "indexed_at": "2026-11-20T13:00:49"
+    },
+    "/Users/jss/Desktop/CSE902_project/data/specs/ts_123501v160600p.pdf": {
+      "sha256": "224bf9a8ff47f9df7933c99dcc531ce975890278a7e0faf3c5f88f5a0dfbb325",
+      "n_chunks": 1081,
+      "spec": "23.501",
+      "version": "16.6.0",
+      "indexed_at": "2026-11-20T13:07:09"
+    }
+  }
+}

@@ -1,0 +1,1657 @@
+[
+ {
+  "component": "UE",
+  "category": "Network entity",
+  "description": "User Equipment: the subscriber device (ME + USIM)."
+ },
+ {
+  "component": "ME",
+  "category": "Network entity",
+  "description": "Mobile Equipment: UE hardware, identified by PEI/IMEI."
+ },
+ {
+  "component": "USIM",
+  "category": "Network entity",
+  "description": "Universal Subscriber Identity Module: holds SUPI/IMSI, key K, SUCI public key."
+ },
+ {
+  "component": "5G-RG",
+  "category": "Network entity",
+  "description": "5G Residential Gateway: home gateway acting as a UE over wireline or FWA."
+ },
+ {
+  "component": "N5CW device",
+  "category": "Network entity",
+  "description": "Non-5G-capable Wi-Fi device, served via the TWIF."
+ },
+ {
+  "component": "NG-RAN",
+  "category": "Network entity",
+  "description": "Next Generation RAN: the 5G radio access network (gNBs, ng-eNBs)."
+ },
+ {
+  "component": "gNB",
+  "category": "Network entity",
+  "description": "Next Generation NodeB: 5G NR base station."
+ },
+ {
+  "component": "gNB-CU",
+  "category": "Network entity",
+  "description": "gNB Central Unit: hosts RRC, SDAP, PDCP; controls DUs."
+ },
+ {
+  "component": "gNB-CU-CP",
+  "category": "Network entity",
+  "description": "gNB-CU control plane: RRC and control-plane PDCP."
+ },
+ {
+  "component": "gNB-CU-UP",
+  "category": "Network entity",
+  "description": "gNB-CU user plane: SDAP and user-plane PDCP."
+ },
+ {
+  "component": "gNB-DU",
+  "category": "Network entity",
+  "description": "gNB Distributed Unit: hosts RLC, MAC, PHY."
+ },
+ {
+  "component": "ng-eNB",
+  "category": "Network entity",
+  "description": "LTE base station connected to the 5G Core."
+ },
+ {
+  "component": "en-gNB",
+  "category": "Network entity",
+  "description": "NR secondary node in EN-DC (non-standalone 5G)."
+ },
+ {
+  "component": "IAB-node",
+  "category": "Network entity",
+  "description": "Integrated Access and Backhaul node: relay with wireless NR backhaul."
+ },
+ {
+  "component": "IAB-donor",
+  "category": "Network entity",
+  "description": "gNB providing the network connection for IAB-nodes."
+ },
+ {
+  "component": "TRP",
+  "category": "Network entity",
+  "description": "Transmission Reception Point: antenna site sending PRS / measuring SRS for positioning."
+ },
+ {
+  "component": "NTN",
+  "category": "Network entity",
+  "description": "Non-Terrestrial Network: satellite/HAPS-based NR or IoT access."
+ },
+ {
+  "component": "eNB",
+  "category": "Network entity",
+  "description": "Evolved NodeB: LTE base station."
+ },
+ {
+  "component": "UTRAN",
+  "category": "Network entity",
+  "description": "Legacy 3G radio access (NodeB/RNC)."
+ },
+ {
+  "component": "GERAN",
+  "category": "Network entity",
+  "description": "Legacy 2G radio access (BTS/BSC)."
+ },
+ {
+  "component": "AMF",
+  "category": "Network entity",
+  "description": "Access and Mobility Management Function: registration, mobility, paging, NAS termination."
+ },
+ {
+  "component": "SEAF",
+  "category": "Network entity",
+  "description": "Security Anchor Function (in AMF): holds the anchor key after authentication."
+ },
+ {
+  "component": "SMF",
+  "category": "Network entity",
+  "description": "Session Management Function: PDU sessions, IP allocation, UPF control."
+ },
+ {
+  "component": "UPF",
+  "category": "Network entity",
+  "description": "User Plane Function: forwards and processes user data traffic."
+ },
+ {
+  "component": "PCF",
+  "category": "Network entity",
+  "description": "Policy Control Function: QoS, charging, mobility and UE (URSP) policies."
+ },
+ {
+  "component": "UDM",
+  "category": "Network entity",
+  "description": "Unified Data Management: subscription data, auth vectors, SUCI de-concealment."
+ },
+ {
+  "component": "ARPF",
+  "category": "Network entity",
+  "description": "Authentication credential Repository and Processing Function (in UDM): stores K, makes auth vectors."
+ },
+ {
+  "component": "SIDF",
+  "category": "Network entity",
+  "description": "Subscription Identifier De-concealing Function (in UDM): SUCI to SUPI."
+ },
+ {
+  "component": "UDR",
+  "category": "Network entity",
+  "description": "Unified Data Repository: database for subscription, policy and exposure data."
+ },
+ {
+  "component": "UDSF",
+  "category": "Network entity",
+  "description": "Unstructured Data Storage Function: stores NF context data."
+ },
+ {
+  "component": "AUSF",
+  "category": "Network entity",
+  "description": "Authentication Server Function: runs 5G AKA / EAP-AKA' for the home network."
+ },
+ {
+  "component": "NRF",
+  "category": "Network entity",
+  "description": "Network Repository Function: NF registration, discovery, access tokens."
+ },
+ {
+  "component": "NSSF",
+  "category": "Network entity",
+  "description": "Network Slice Selection Function: picks slices and the serving AMF set."
+ },
+ {
+  "component": "NEF",
+  "category": "Network entity",
+  "description": "Network Exposure Function: exposes network events/capabilities to external apps."
+ },
+ {
+  "component": "NWDAF",
+  "category": "Network entity",
+  "description": "Network Data Analytics Function: network analytics and ML predictions."
+ },
+ {
+  "component": "AF",
+  "category": "Network entity",
+  "description": "Application Function: application interacting with the core (QoS, routing)."
+ },
+ {
+  "component": "SCP",
+  "category": "Network entity",
+  "description": "Service Communication Proxy: routes signalling between NFs."
+ },
+ {
+  "component": "SEPP",
+  "category": "Network entity",
+  "description": "Security Edge Protection Proxy: secures roaming signalling between operators."
+ },
+ {
+  "component": "N3IWF",
+  "category": "Network entity",
+  "description": "Non-3GPP InterWorking Function: gateway for untrusted Wi-Fi (IPsec)."
+ },
+ {
+  "component": "TNGF",
+  "category": "Network entity",
+  "description": "Trusted Non-3GPP Gateway Function: gateway for trusted Wi-Fi."
+ },
+ {
+  "component": "TNAP",
+  "category": "Network entity",
+  "description": "Trusted Non-3GPP Access Point: Wi-Fi AP in a trusted access network."
+ },
+ {
+  "component": "TWIF",
+  "category": "Network entity",
+  "description": "Trusted WLAN Interworking Function: serves non-5G-capable Wi-Fi devices."
+ },
+ {
+  "component": "W-AGF",
+  "category": "Network entity",
+  "description": "Wireline Access Gateway Function: connects fixed broadband to 5GC."
+ },
+ {
+  "component": "NSSAAF",
+  "category": "Network entity",
+  "description": "Network Slice-Specific Authentication and Authorization Function: slice auth via external AAA."
+ },
+ {
+  "component": "NSACF",
+  "category": "Network entity",
+  "description": "Network Slice Admission Control Function: caps UEs/sessions per slice."
+ },
+ {
+  "component": "CHF",
+  "category": "Network entity",
+  "description": "Charging Function: online/offline charging and quotas."
+ },
+ {
+  "component": "SMSF",
+  "category": "Network entity",
+  "description": "Short Message Service Function: SMS over NAS."
+ },
+ {
+  "component": "LMF",
+  "category": "Network entity",
+  "description": "Location Management Function: 5G positioning server; computes UE location."
+ },
+ {
+  "component": "GMLC",
+  "category": "Network entity",
+  "description": "Gateway Mobile Location Centre: entry point for location requests (incl. PSAPs)."
+ },
+ {
+  "component": "LRF",
+  "category": "Network entity",
+  "description": "Location Retrieval Function: location/routing info for IMS emergency calls."
+ },
+ {
+  "component": "5G-EIR",
+  "category": "Network entity",
+  "description": "Equipment Identity Register: checks IMEI/PEI against blocklists."
+ },
+ {
+  "component": "BSF",
+  "category": "Network entity",
+  "description": "Binding Support Function: maps PDU sessions to their PCF."
+ },
+ {
+  "component": "UCMF",
+  "category": "Network entity",
+  "description": "UE radio Capability Management Function: stores radio capability IDs."
+ },
+ {
+  "component": "AAnF",
+  "category": "Network entity",
+  "description": "AKMA Anchor Function: application keys from 5G authentication."
+ },
+ {
+  "component": "DCCF",
+  "category": "Network entity",
+  "description": "Data Collection Coordination Function: coordinates analytics data collection."
+ },
+ {
+  "component": "ADRF",
+  "category": "Network entity",
+  "description": "Analytics Data Repository Function: stores analytics data and ML models."
+ },
+ {
+  "component": "MFAF",
+  "category": "Network entity",
+  "description": "Messaging Framework Adaptor Function: delivers collected data to consumers."
+ },
+ {
+  "component": "EASDF",
+  "category": "Network entity",
+  "description": "Edge Application Server Discovery Function: DNS steering to edge servers."
+ },
+ {
+  "component": "TSCTSF",
+  "category": "Network entity",
+  "description": "Time Sensitive Communication and Time Synchronization Function."
+ },
+ {
+  "component": "TSN AF",
+  "category": "Network entity",
+  "description": "TSN Application Function: interfaces 5GS with IEEE TSN networks."
+ },
+ {
+  "component": "MB-SMF",
+  "category": "Network entity",
+  "description": "Multicast/Broadcast SMF: manages MBS sessions."
+ },
+ {
+  "component": "MB-UPF",
+  "category": "Network entity",
+  "description": "Multicast/Broadcast UPF: user plane for MBS traffic."
+ },
+ {
+  "component": "MBSF",
+  "category": "Network entity",
+  "description": "Multicast/Broadcast Service Function: MBS service layer."
+ },
+ {
+  "component": "5G DDNMF",
+  "category": "Network entity",
+  "description": "5G Direct Discovery Name Management Function: ProSe discovery codes."
+ },
+ {
+  "component": "ProSe AS",
+  "category": "Network entity",
+  "description": "ProSe Application Server: proximity services."
+ },
+ {
+  "component": "V2X AS",
+  "category": "Network entity",
+  "description": "V2X Application Server: vehicle communication services."
+ },
+ {
+  "component": "DN",
+  "category": "Network entity",
+  "description": "Data Network: external network (internet, IMS, enterprise) reached via the UPF."
+ },
+ {
+  "component": "CBCF",
+  "category": "Network entity",
+  "description": "Cell Broadcast Centre Function: delivers public warnings in 5G."
+ },
+ {
+  "component": "PWS-IWF",
+  "category": "Network entity",
+  "description": "PWS InterWorking Function: connects a legacy CBC to 5GC."
+ },
+ {
+  "component": "CBC",
+  "category": "Network entity",
+  "description": "Cell Broadcast Centre: delivers public warnings in LTE."
+ },
+ {
+  "component": "CBE",
+  "category": "Network entity",
+  "description": "Cell Broadcast Entity: alert originator (e.g. government agency)."
+ },
+ {
+  "component": "SMS-SC",
+  "category": "Network entity",
+  "description": "SMS Service Centre: stores and forwards SMS."
+ },
+ {
+  "component": "LCS Client",
+  "category": "Network entity",
+  "description": "Location Services client: app/entity requesting a UE's location."
+ },
+ {
+  "component": "PSAP",
+  "category": "Network entity",
+  "description": "Public Safety Answering Point: emergency call centre."
+ },
+ {
+  "component": "SLP",
+  "category": "Network entity",
+  "description": "SUPL Location Platform (OMA): user-plane location server."
+ },
+ {
+  "component": "LI functions",
+  "category": "Network entity",
+  "description": "Lawful Interception functions (ADMF, POI, MDF): legal intercept."
+ },
+ {
+  "component": "EAS",
+  "category": "Network entity",
+  "description": "Edge Application Server: app instance at the network edge."
+ },
+ {
+  "component": "EES",
+  "category": "Network entity",
+  "description": "Edge Enabler Server: edge discovery/registration services."
+ },
+ {
+  "component": "ECS",
+  "category": "Network entity",
+  "description": "Edge Configuration Server: provides edge network config to UEs."
+ },
+ {
+  "component": "EEC",
+  "category": "Network entity",
+  "description": "Edge Enabler Client: UE-side edge client."
+ },
+ {
+  "component": "MCPTT server",
+  "category": "Network entity",
+  "description": "Mission Critical Push-To-Talk server: public safety PTT."
+ },
+ {
+  "component": "MCData server",
+  "category": "Network entity",
+  "description": "Mission Critical Data server: MC messaging and file sharing."
+ },
+ {
+  "component": "MCVideo server",
+  "category": "Network entity",
+  "description": "Mission Critical Video server."
+ },
+ {
+  "component": "SEAL servers",
+  "category": "Network entity",
+  "description": "Service Enabler Architecture Layer: common identity, key, group, location services."
+ },
+ {
+  "component": "MME",
+  "category": "Network entity",
+  "description": "Mobility Management Entity: LTE core control node."
+ },
+ {
+  "component": "S-GW",
+  "category": "Network entity",
+  "description": "Serving Gateway: LTE user-plane mobility anchor."
+ },
+ {
+  "component": "P-GW",
+  "category": "Network entity",
+  "description": "PDN Gateway: LTE gateway to external networks."
+ },
+ {
+  "component": "HSS",
+  "category": "Network entity",
+  "description": "Home Subscriber Server: LTE/IMS subscriber database."
+ },
+ {
+  "component": "PCRF",
+  "category": "Network entity",
+  "description": "Policy and Charging Rules Function: LTE policy."
+ },
+ {
+  "component": "SCEF",
+  "category": "Network entity",
+  "description": "Service Capability Exposure Function: LTE exposure (IoT)."
+ },
+ {
+  "component": "E-SMLC",
+  "category": "Network entity",
+  "description": "Evolved Serving Mobile Location Centre: LTE positioning server."
+ },
+ {
+  "component": "MSC",
+  "category": "Network entity",
+  "description": "Mobile Switching Centre: legacy circuit-switched core (CSFB, SRVCC)."
+ },
+ {
+  "component": "P-CSCF",
+  "category": "Network entity",
+  "description": "Proxy CSCF: UE's first IMS contact; detects emergency calls."
+ },
+ {
+  "component": "I-CSCF",
+  "category": "Network entity",
+  "description": "Interrogating CSCF: home IMS entry point, finds the S-CSCF."
+ },
+ {
+  "component": "S-CSCF",
+  "category": "Network entity",
+  "description": "Serving CSCF: IMS registrar and session control."
+ },
+ {
+  "component": "E-CSCF",
+  "category": "Network entity",
+  "description": "Emergency CSCF: routes IMS emergency calls to PSAPs."
+ },
+ {
+  "component": "IBCF",
+  "category": "Network entity",
+  "description": "Interconnection Border Control Function: IMS border / SBC."
+ },
+ {
+  "component": "BGCF",
+  "category": "Network entity",
+  "description": "Breakout Gateway Control Function: routes calls to the PSTN."
+ },
+ {
+  "component": "MGCF",
+  "category": "Network entity",
+  "description": "Media Gateway Control Function: IMS to PSTN interworking."
+ },
+ {
+  "component": "MRF",
+  "category": "Network entity",
+  "description": "Media Resource Function: conferencing, announcements."
+ },
+ {
+  "component": "MMTel AS",
+  "category": "Network entity",
+  "description": "Multimedia Telephony Application Server: IMS telephony services."
+ },
+ {
+  "component": "SCC AS",
+  "category": "Network entity",
+  "description": "Service Centralization and Continuity AS: anchors calls for SRVCC."
+ },
+ {
+  "component": "ATCF/ATGW",
+  "category": "Network entity",
+  "description": "Access Transfer Control Function / Gateway: speeds up SRVCC."
+ },
+ {
+  "component": "EATF",
+  "category": "Network entity",
+  "description": "Emergency Access Transfer Function: SRVCC for emergency calls."
+ },
+ {
+  "component": "Uu",
+  "category": "Interface",
+  "description": "UE to base station radio interface."
+ },
+ {
+  "component": "PC5",
+  "category": "Interface",
+  "description": "UE to UE sidelink (ProSe, V2X)."
+ },
+ {
+  "component": "N1",
+  "category": "Interface",
+  "description": "UE to AMF: NAS signalling."
+ },
+ {
+  "component": "N2",
+  "category": "Interface",
+  "description": "RAN to AMF: control plane (NGAP)."
+ },
+ {
+  "component": "N3",
+  "category": "Interface",
+  "description": "RAN to UPF: user plane (GTP-U)."
+ },
+ {
+  "component": "N4",
+  "category": "Interface",
+  "description": "SMF to UPF: user-plane control (PFCP)."
+ },
+ {
+  "component": "N6",
+  "category": "Interface",
+  "description": "UPF to Data Network."
+ },
+ {
+  "component": "N9",
+  "category": "Interface",
+  "description": "UPF to UPF user plane."
+ },
+ {
+  "component": "N19",
+  "category": "Interface",
+  "description": "UPF to UPF tunnel for 5G LAN groups."
+ },
+ {
+  "component": "NWu",
+  "category": "Interface",
+  "description": "UE to N3IWF: IPsec tunnel over untrusted Wi-Fi."
+ },
+ {
+  "component": "NWt",
+  "category": "Interface",
+  "description": "UE to TNGF: tunnel over trusted Wi-Fi."
+ },
+ {
+  "component": "Y2",
+  "category": "Interface",
+  "description": "Untrusted Wi-Fi network to N3IWF."
+ },
+ {
+  "component": "Xn",
+  "category": "Interface",
+  "description": "gNB to gNB: handover, dual connectivity."
+ },
+ {
+  "component": "F1",
+  "category": "Interface",
+  "description": "gNB-CU to gNB-DU."
+ },
+ {
+  "component": "E1",
+  "category": "Interface",
+  "description": "gNB-CU-CP to gNB-CU-UP."
+ },
+ {
+  "component": "X2",
+  "category": "Interface",
+  "description": "eNB to eNB / eNB to en-gNB (LTE, NSA)."
+ },
+ {
+  "component": "N5",
+  "category": "Interface",
+  "description": "PCF to AF: application QoS requests."
+ },
+ {
+  "component": "N7",
+  "category": "Interface",
+  "description": "SMF to PCF: session policy."
+ },
+ {
+  "component": "N8",
+  "category": "Interface",
+  "description": "AMF to UDM: subscription data."
+ },
+ {
+  "component": "N10",
+  "category": "Interface",
+  "description": "SMF to UDM: session subscription data."
+ },
+ {
+  "component": "N11",
+  "category": "Interface",
+  "description": "AMF to SMF: PDU session control."
+ },
+ {
+  "component": "N12",
+  "category": "Interface",
+  "description": "AMF to AUSF: authentication."
+ },
+ {
+  "component": "N13",
+  "category": "Interface",
+  "description": "AUSF to UDM: authentication vectors."
+ },
+ {
+  "component": "N14",
+  "category": "Interface",
+  "description": "AMF to AMF: UE context transfer."
+ },
+ {
+  "component": "N15",
+  "category": "Interface",
+  "description": "AMF to PCF: mobility and UE policy."
+ },
+ {
+  "component": "N16",
+  "category": "Interface",
+  "description": "SMF to SMF: roaming / intermediate SMF."
+ },
+ {
+  "component": "N17",
+  "category": "Interface",
+  "description": "AMF to 5G-EIR: IMEI check."
+ },
+ {
+  "component": "N18",
+  "category": "Interface",
+  "description": "NF to UDSF: context storage."
+ },
+ {
+  "component": "N20",
+  "category": "Interface",
+  "description": "AMF to SMSF: SMS."
+ },
+ {
+  "component": "N21",
+  "category": "Interface",
+  "description": "SMSF to UDM: SMS subscription."
+ },
+ {
+  "component": "N22",
+  "category": "Interface",
+  "description": "AMF to NSSF: slice selection."
+ },
+ {
+  "component": "N23",
+  "category": "Interface",
+  "description": "PCF to NWDAF: analytics for policy."
+ },
+ {
+  "component": "N24",
+  "category": "Interface",
+  "description": "Visited PCF to home PCF (roaming)."
+ },
+ {
+  "component": "N27",
+  "category": "Interface",
+  "description": "Visited NRF to home NRF (roaming)."
+ },
+ {
+  "component": "N28",
+  "category": "Interface",
+  "description": "PCF to CHF: spending limits."
+ },
+ {
+  "component": "N29",
+  "category": "Interface",
+  "description": "NEF to SMF."
+ },
+ {
+  "component": "N30",
+  "category": "Interface",
+  "description": "PCF to NEF."
+ },
+ {
+  "component": "N31",
+  "category": "Interface",
+  "description": "Visited NSSF to home NSSF (roaming)."
+ },
+ {
+  "component": "N33",
+  "category": "Interface",
+  "description": "NEF to AF: northbound exposure APIs."
+ },
+ {
+  "component": "N34",
+  "category": "Interface",
+  "description": "NSSF to NWDAF."
+ },
+ {
+  "component": "N35",
+  "category": "Interface",
+  "description": "UDM to UDR."
+ },
+ {
+  "component": "N36",
+  "category": "Interface",
+  "description": "PCF to UDR."
+ },
+ {
+  "component": "N37",
+  "category": "Interface",
+  "description": "NEF to UDR."
+ },
+ {
+  "component": "N40",
+  "category": "Interface",
+  "description": "SMF to CHF: session charging."
+ },
+ {
+  "component": "N50",
+  "category": "Interface",
+  "description": "AMF to CBCF: public warnings."
+ },
+ {
+  "component": "N51",
+  "category": "Interface",
+  "description": "AMF to NEF."
+ },
+ {
+  "component": "N52",
+  "category": "Interface",
+  "description": "NEF to UDM."
+ },
+ {
+  "component": "N58",
+  "category": "Interface",
+  "description": "AMF to NSSAAF: slice authentication."
+ },
+ {
+  "component": "N59",
+  "category": "Interface",
+  "description": "UDM to NSSAAF."
+ },
+ {
+  "component": "N26",
+  "category": "Interface",
+  "description": "MME to AMF: 5G-LTE interworking."
+ },
+ {
+  "component": "N32",
+  "category": "Interface",
+  "description": "SEPP to SEPP: secure roaming signalling."
+ },
+ {
+  "component": "NL1",
+  "category": "Interface",
+  "description": "AMF to LMF: positioning."
+ },
+ {
+  "component": "NL2",
+  "category": "Interface",
+  "description": "AMF to GMLC: location requests."
+ },
+ {
+  "component": "NL3",
+  "category": "Interface",
+  "description": "GMLC to GMLC (roaming)."
+ },
+ {
+  "component": "NL5",
+  "category": "Interface",
+  "description": "NEF to GMLC: location exposure."
+ },
+ {
+  "component": "NL6",
+  "category": "Interface",
+  "description": "UDM to GMLC: serving AMF and privacy lookup."
+ },
+ {
+  "component": "Le",
+  "category": "Interface",
+  "description": "LCS client / PSAP to GMLC (MLP)."
+ },
+ {
+  "component": "SLs",
+  "category": "Interface",
+  "description": "MME to E-SMLC: LTE positioning."
+ },
+ {
+  "component": "SLg",
+  "category": "Interface",
+  "description": "MME to GMLC: LTE location."
+ },
+ {
+  "component": "SLh",
+  "category": "Interface",
+  "description": "HSS to GMLC."
+ },
+ {
+  "component": "S1-MME",
+  "category": "Interface",
+  "description": "eNB to MME: control plane."
+ },
+ {
+  "component": "S1-U",
+  "category": "Interface",
+  "description": "eNB to S-GW: user plane."
+ },
+ {
+  "component": "S5/S8",
+  "category": "Interface",
+  "description": "S-GW to P-GW (S8 when roaming)."
+ },
+ {
+  "component": "S6a",
+  "category": "Interface",
+  "description": "MME to HSS: subscription and authentication."
+ },
+ {
+  "component": "S10",
+  "category": "Interface",
+  "description": "MME to MME."
+ },
+ {
+  "component": "S11",
+  "category": "Interface",
+  "description": "MME to S-GW."
+ },
+ {
+  "component": "SGi",
+  "category": "Interface",
+  "description": "P-GW to external network."
+ },
+ {
+  "component": "Gx",
+  "category": "Interface",
+  "description": "P-GW to PCRF: policy rules."
+ },
+ {
+  "component": "Rx",
+  "category": "Interface",
+  "description": "AF / P-CSCF to PCRF: QoS requests."
+ },
+ {
+  "component": "SGs",
+  "category": "Interface",
+  "description": "MME to MSC: CS fallback, SMS."
+ },
+ {
+  "component": "Sv",
+  "category": "Interface",
+  "description": "MME to MSC: SRVCC."
+ },
+ {
+  "component": "SBc",
+  "category": "Interface",
+  "description": "MME to CBC: public warnings (LTE)."
+ },
+ {
+  "component": "T8",
+  "category": "Interface",
+  "description": "SCEF to application server API."
+ },
+ {
+  "component": "Gm",
+  "category": "Interface",
+  "description": "UE to P-CSCF: SIP."
+ },
+ {
+  "component": "Mw",
+  "category": "Interface",
+  "description": "CSCF to CSCF: SIP."
+ },
+ {
+  "component": "Cx",
+  "category": "Interface",
+  "description": "CSCF to HSS: IMS registration and authentication."
+ },
+ {
+  "component": "Sh",
+  "category": "Interface",
+  "description": "IMS application server to HSS."
+ },
+ {
+  "component": "ISC",
+  "category": "Interface",
+  "description": "S-CSCF to application server."
+ },
+ {
+  "component": "Ml",
+  "category": "Interface",
+  "description": "E-CSCF to LRF: emergency routing and location."
+ },
+ {
+  "component": "5GMM",
+  "category": "Protocol",
+  "description": "5G NAS Mobility Management: registration, security, mobility."
+ },
+ {
+  "component": "5GSM",
+  "category": "Protocol",
+  "description": "5G NAS Session Management: PDU sessions."
+ },
+ {
+  "component": "EMM",
+  "category": "Protocol",
+  "description": "LTE NAS mobility management."
+ },
+ {
+  "component": "ESM",
+  "category": "Protocol",
+  "description": "LTE NAS session management."
+ },
+ {
+  "component": "NR RRC",
+  "category": "Protocol",
+  "description": "NR Radio Resource Control: radio connection, mobility, broadcast."
+ },
+ {
+  "component": "LTE RRC",
+  "category": "Protocol",
+  "description": "LTE Radio Resource Control."
+ },
+ {
+  "component": "SDAP",
+  "category": "Protocol",
+  "description": "Service Data Adaptation Protocol: maps QoS flows to radio bearers."
+ },
+ {
+  "component": "PDCP",
+  "category": "Protocol",
+  "description": "Packet Data Convergence Protocol: radio ciphering, integrity, compression."
+ },
+ {
+  "component": "RLC",
+  "category": "Protocol",
+  "description": "Radio Link Control: segmentation, retransmission (ARQ)."
+ },
+ {
+  "component": "MAC",
+  "category": "Protocol",
+  "description": "Medium Access Control: scheduling, HARQ, random access."
+ },
+ {
+  "component": "NR PHY",
+  "category": "Protocol",
+  "description": "NR physical layer."
+ },
+ {
+  "component": "BAP",
+  "category": "Protocol",
+  "description": "Backhaul Adaptation Protocol: IAB routing."
+ },
+ {
+  "component": "PC5 signalling",
+  "category": "Protocol",
+  "description": "Sidelink signalling (PC5-S / PC5-RRC)."
+ },
+ {
+  "component": "NGAP",
+  "category": "Protocol",
+  "description": "NG Application Protocol: RAN to AMF signalling."
+ },
+ {
+  "component": "XnAP",
+  "category": "Protocol",
+  "description": "Xn Application Protocol: gNB to gNB signalling."
+ },
+ {
+  "component": "F1AP",
+  "category": "Protocol",
+  "description": "F1 Application Protocol: CU to DU signalling."
+ },
+ {
+  "component": "E1AP",
+  "category": "Protocol",
+  "description": "E1 Application Protocol: CU-CP to CU-UP signalling."
+ },
+ {
+  "component": "S1AP",
+  "category": "Protocol",
+  "description": "S1 Application Protocol: eNB to MME signalling."
+ },
+ {
+  "component": "X2AP",
+  "category": "Protocol",
+  "description": "X2 Application Protocol: eNB to eNB signalling."
+ },
+ {
+  "component": "NRPPa",
+  "category": "Protocol",
+  "description": "NR Positioning Protocol A: RAN to LMF positioning."
+ },
+ {
+  "component": "LPPa",
+  "category": "Protocol",
+  "description": "LTE Positioning Protocol A: eNB to E-SMLC."
+ },
+ {
+  "component": "LPP",
+  "category": "Protocol",
+  "description": "LTE Positioning Protocol: UE to location server (LTE and NR)."
+ },
+ {
+  "component": "LCS-AP",
+  "category": "Protocol",
+  "description": "LCS Application Protocol: MME to E-SMLC."
+ },
+ {
+  "component": "ELP",
+  "category": "Protocol",
+  "description": "EPC LCS Protocol: MME to GMLC."
+ },
+ {
+  "component": "MLP",
+  "category": "Protocol",
+  "description": "Mobile Location Protocol (OMA): client / PSAP to GMLC."
+ },
+ {
+  "component": "SUPL",
+  "category": "Protocol",
+  "description": "Secure User Plane Location (OMA): IP-based positioning."
+ },
+ {
+  "component": "PFCP",
+  "category": "Protocol",
+  "description": "Packet Forwarding Control Protocol: SMF controls the UPF."
+ },
+ {
+  "component": "GTP-U",
+  "category": "Protocol",
+  "description": "GTP user plane: tunnels user data."
+ },
+ {
+  "component": "GTPv2-C",
+  "category": "Protocol",
+  "description": "GTPv2 control plane: LTE core signalling and N26."
+ },
+ {
+  "component": "HTTP/2",
+  "category": "Protocol",
+  "description": "HTTP/2: transport for 5G core APIs."
+ },
+ {
+  "component": "SBI (JSON/OpenAPI)",
+  "category": "Protocol",
+  "description": "5G core REST/JSON APIs (OpenAPI)."
+ },
+ {
+  "component": "SCTP",
+  "category": "Protocol",
+  "description": "Stream Control Transmission Protocol: transport for RAN signalling."
+ },
+ {
+  "component": "IP",
+  "category": "Protocol",
+  "description": "IPv4/IPv6 with UDP/TCP."
+ },
+ {
+  "component": "TLS",
+  "category": "Protocol",
+  "description": "Transport Layer Security: protects core APIs and N32."
+ },
+ {
+  "component": "PRINS",
+  "category": "Protocol",
+  "description": "PRotocol for N32 INterconnect Security: application-layer roaming protection."
+ },
+ {
+  "component": "OAuth 2.0",
+  "category": "Protocol",
+  "description": "OAuth 2.0: token-based NF authorization."
+ },
+ {
+  "component": "IPsec",
+  "category": "Protocol",
+  "description": "IPsec: IP-layer tunnel security."
+ },
+ {
+  "component": "IKEv2",
+  "category": "Protocol",
+  "description": "Internet Key Exchange v2: sets up IPsec tunnels."
+ },
+ {
+  "component": "EAP",
+  "category": "Protocol",
+  "description": "Extensible Authentication Protocol framework."
+ },
+ {
+  "component": "EAP-AKA'",
+  "category": "Protocol",
+  "description": "EAP-AKA': EAP-based 5G primary authentication."
+ },
+ {
+  "component": "NEA/NIA",
+  "category": "Protocol",
+  "description": "NEA/NIA: 5G ciphering and integrity algorithms."
+ },
+ {
+  "component": "Diameter",
+  "category": "Protocol",
+  "description": "Diameter: AAA signalling in LTE and IMS."
+ },
+ {
+  "component": "SIP",
+  "category": "Protocol",
+  "description": "Session Initiation Protocol: IMS call/session signalling."
+ },
+ {
+  "component": "SDP",
+  "category": "Protocol",
+  "description": "Session Description Protocol: media negotiation."
+ },
+ {
+  "component": "RTP/RTCP",
+  "category": "Protocol",
+  "description": "Real-time Transport Protocol: voice/video media."
+ },
+ {
+  "component": "SM-CP/SM-RP",
+  "category": "Protocol",
+  "description": "SMS transport protocols (SM-CP/SM-RP)."
+ },
+ {
+  "component": "SGsAP",
+  "category": "Protocol",
+  "description": "SGs Application Part: MME to MSC."
+ },
+ {
+  "component": "SBc-AP",
+  "category": "Protocol",
+  "description": "SBc Application Part: CBC to MME warnings."
+ },
+ {
+  "component": "Initial Registration",
+  "category": "Procedure",
+  "description": "UE registers with the 5G core (authentication, security, slices)."
+ },
+ {
+  "component": "Mobility Registration Update",
+  "category": "Procedure",
+  "description": "Re-registration after leaving the tracking area list."
+ },
+ {
+  "component": "Periodic Registration Update",
+  "category": "Procedure",
+  "description": "Timer-driven (T3512) registration to confirm reachability."
+ },
+ {
+  "component": "Emergency Registration",
+  "category": "Procedure",
+  "description": "Registration for emergency services only."
+ },
+ {
+  "component": "Deregistration",
+  "category": "Procedure",
+  "description": "UE- or network-initiated detach."
+ },
+ {
+  "component": "Service Request",
+  "category": "Procedure",
+  "description": "Idle UE resumes connection and user plane."
+ },
+ {
+  "component": "Paging",
+  "category": "Procedure",
+  "description": "Network locates an idle or inactive UE."
+ },
+ {
+  "component": "AN Release",
+  "category": "Procedure",
+  "description": "Releases the RAN connection; UE goes idle."
+ },
+ {
+  "component": "UE Configuration Update",
+  "category": "Procedure",
+  "description": "Network updates UE settings (GUTI, NSSAI, etc.)."
+ },
+ {
+  "component": "MICO / eDRX / PSM",
+  "category": "Procedure",
+  "description": "MICO / eDRX / PSM power-saving modes."
+ },
+ {
+  "component": "Identification",
+  "category": "Procedure",
+  "description": "Network requests UE identity (SUCI, IMEI)."
+ },
+ {
+  "component": "ME Identity Check",
+  "category": "Procedure",
+  "description": "IMEI check against the 5G-EIR."
+ },
+ {
+  "component": "RRC Connection Establishment",
+  "category": "Procedure",
+  "description": "Establishes the RRC connection."
+ },
+ {
+  "component": "RRC_INACTIVE / RRC Resume",
+  "category": "Procedure",
+  "description": "RRC_INACTIVE state and RRC resume."
+ },
+ {
+  "component": "RRC Reconfiguration",
+  "category": "Procedure",
+  "description": "Modifies radio bearers, measurements, handover."
+ },
+ {
+  "component": "RRC Release",
+  "category": "Procedure",
+  "description": "Releases or suspends the RRC connection."
+ },
+ {
+  "component": "RRC Re-establishment",
+  "category": "Procedure",
+  "description": "Recovers after radio link failure."
+ },
+ {
+  "component": "System Information Broadcast",
+  "category": "Procedure",
+  "description": "MIB/SIB broadcast of cell information."
+ },
+ {
+  "component": "Random Access",
+  "category": "Procedure",
+  "description": "RACH: initial uplink access."
+ },
+ {
+  "component": "Cell Selection / Reselection",
+  "category": "Procedure",
+  "description": "Idle UE chooses which cell to camp on."
+ },
+ {
+  "component": "Measurement Reporting",
+  "category": "Procedure",
+  "description": "UE reports radio measurements."
+ },
+ {
+  "component": "UE Capability Transfer",
+  "category": "Procedure",
+  "description": "UE reports its radio capabilities."
+ },
+ {
+  "component": "AS Security Mode Command",
+  "category": "Procedure",
+  "description": "Activates radio (AS) encryption and integrity."
+ },
+ {
+  "component": "Dual Connectivity (EN-DC / MR-DC)",
+  "category": "Procedure",
+  "description": "EN-DC / MR-DC: two base stations at once (incl. NSA)."
+ },
+ {
+  "component": "Xn Handover",
+  "category": "Procedure",
+  "description": "Handover directly between gNBs."
+ },
+ {
+  "component": "N2 Handover",
+  "category": "Procedure",
+  "description": "Handover via the AMF."
+ },
+ {
+  "component": "Conditional Handover",
+  "category": "Procedure",
+  "description": "UE executes a pre-configured handover."
+ },
+ {
+  "component": "5GS-EPS Handover (N26)",
+  "category": "Procedure",
+  "description": "5G to LTE connected handover via N26."
+ },
+ {
+  "component": "5GS-EPS Idle Mobility / Interworking",
+  "category": "Procedure",
+  "description": "5G to LTE idle-mode mobility."
+ },
+ {
+  "component": "EPS Attach",
+  "category": "Procedure",
+  "description": "LTE registration."
+ },
+ {
+  "component": "Tracking Area Update",
+  "category": "Procedure",
+  "description": "LTE location update."
+ },
+ {
+  "component": "SRVCC / 5G-SRVCC",
+  "category": "Procedure",
+  "description": "Moves an IMS voice call to 2G/3G circuit switched."
+ },
+ {
+  "component": "CS Fallback",
+  "category": "Procedure",
+  "description": "LTE UE falls back to 2G/3G for voice."
+ },
+ {
+  "component": "EPS Fallback for Voice",
+  "category": "Procedure",
+  "description": "5G voice call moved to VoLTE."
+ },
+ {
+  "component": "PDU Session Establishment",
+  "category": "Procedure",
+  "description": "Sets up a data session."
+ },
+ {
+  "component": "PDU Session Modification",
+  "category": "Procedure",
+  "description": "Changes session QoS."
+ },
+ {
+  "component": "PDU Session Release",
+  "category": "Procedure",
+  "description": "Ends a data session."
+ },
+ {
+  "component": "SSC Mode / UPF Relocation",
+  "category": "Procedure",
+  "description": "SSC modes: changing the session anchor UPF."
+ },
+ {
+  "component": "ULCL / Branching Point",
+  "category": "Procedure",
+  "description": "Local traffic breakout (e.g. to edge)."
+ },
+ {
+  "component": "QoS Flow Management",
+  "category": "Procedure",
+  "description": "5G QoS model (QoS flows, 5QI)."
+ },
+ {
+  "component": "EPS Bearer / PDN Connectivity",
+  "category": "Procedure",
+  "description": "LTE default/dedicated bearers."
+ },
+ {
+  "component": "Emergency PDU Session",
+  "category": "Procedure",
+  "description": "Data session for IMS emergency calls."
+ },
+ {
+  "component": "AM Policy Association",
+  "category": "Procedure",
+  "description": "AMF gets mobility policy from the PCF."
+ },
+ {
+  "component": "SM Policy Association",
+  "category": "Procedure",
+  "description": "SMF gets session policy (PCC rules) from the PCF."
+ },
+ {
+  "component": "UE Policy Delivery (URSP)",
+  "category": "Procedure",
+  "description": "PCF sends URSP policies to the UE."
+ },
+ {
+  "component": "Policy Authorization (AF session)",
+  "category": "Procedure",
+  "description": "Application/IMS requests QoS from the PCF."
+ },
+ {
+  "component": "5G AKA",
+  "category": "Procedure",
+  "description": "5G AKA authentication."
+ },
+ {
+  "component": "EAP-AKA' Authentication",
+  "category": "Procedure",
+  "description": "EAP-AKA' authentication."
+ },
+ {
+  "component": "EAP-TLS Authentication",
+  "category": "Procedure",
+  "description": "Certificate-based authentication (private networks)."
+ },
+ {
+  "component": "SUCI Concealment",
+  "category": "Procedure",
+  "description": "Encrypts the SUPI as SUCI (ECIES)."
+ },
+ {
+  "component": "NAS Security Mode Command",
+  "category": "Procedure",
+  "description": "Activates NAS encryption and integrity."
+ },
+ {
+  "component": "5G Key Hierarchy & Derivation",
+  "category": "Procedure",
+  "description": "Derivation of 5G keys, incl. at handover."
+ },
+ {
+  "component": "Secondary Authentication",
+  "category": "Procedure",
+  "description": "External DN-AAA authentication of a session."
+ },
+ {
+  "component": "NSSAA",
+  "category": "Procedure",
+  "description": "Slice-specific authentication."
+ },
+ {
+  "component": "AKMA",
+  "category": "Procedure",
+  "description": "Application keys derived from 5G authentication."
+ },
+ {
+  "component": "SoR / UPU Protection",
+  "category": "Procedure",
+  "description": "Protected roaming steering and UE parameter updates."
+ },
+ {
+  "component": "SBA Security (mTLS & OAuth 2.0)",
+  "category": "Procedure",
+  "description": "Mutual TLS and OAuth 2.0 between core functions."
+ },
+ {
+  "component": "N32 Inter-PLMN Security",
+  "category": "Procedure",
+  "description": "Securing roaming signalling between SEPPs."
+ },
+ {
+  "component": "EPS AKA",
+  "category": "Procedure",
+  "description": "LTE authentication."
+ },
+ {
+  "component": "False Base Station Detection",
+  "category": "Procedure",
+  "description": "Detecting fake base stations from UE reports."
+ },
+ {
+  "component": "Lawful Interception",
+  "category": "Procedure",
+  "description": "Legal interception of communications."
+ },
+ {
+  "component": "Network Slice Selection",
+  "category": "Procedure",
+  "description": "Choosing slices (NSSAI) for a UE."
+ },
+ {
+  "component": "Network Slice Admission Control",
+  "category": "Procedure",
+  "description": "Per-slice admission limits."
+ },
+ {
+  "component": "NF Registration",
+  "category": "Procedure",
+  "description": "NF registers with the NRF."
+ },
+ {
+  "component": "NF Discovery",
+  "category": "Procedure",
+  "description": "NF finds other NFs via the NRF."
+ },
+ {
+  "component": "5GC-MT-LR",
+  "category": "Procedure",
+  "description": "External request for a UE's location."
+ },
+ {
+  "component": "5GC-MO-LR",
+  "category": "Procedure",
+  "description": "UE requests its own location."
+ },
+ {
+  "component": "5GC-NI-LR",
+  "category": "Procedure",
+  "description": "Network-triggered location for emergency calls."
+ },
+ {
+  "component": "Deferred 5GC-MT-LR",
+  "category": "Procedure",
+  "description": "Periodic or event-based location reporting."
+ },
+ {
+  "component": "EPC Location Procedures",
+  "category": "Procedure",
+  "description": "LTE location procedures."
+ },
+ {
+  "component": "NG-RAN Positioning Procedure",
+  "category": "Procedure",
+  "description": "LMF positions the UE via LPP/NRPPa."
+ },
+ {
+  "component": "Location Privacy",
+  "category": "Procedure",
+  "description": "User privacy check for location requests."
+ },
+ {
+  "component": "A-GNSS Positioning",
+  "category": "Procedure",
+  "description": "Assisted satellite (GPS/GNSS) positioning."
+ },
+ {
+  "component": "E-CID Positioning",
+  "category": "Procedure",
+  "description": "Cell-ID based positioning."
+ },
+ {
+  "component": "DL-TDOA / OTDOA",
+  "category": "Procedure",
+  "description": "Downlink time-difference positioning."
+ },
+ {
+  "component": "UL-TDOA",
+  "category": "Procedure",
+  "description": "Uplink time-difference positioning."
+ },
+ {
+  "component": "Multi-RTT",
+  "category": "Procedure",
+  "description": "Round-trip-time positioning."
+ },
+ {
+  "component": "DL-AoD / UL-AoA",
+  "category": "Procedure",
+  "description": "Angle-based positioning."
+ },
+ {
+  "component": "Sensor / WLAN / Bluetooth / TBS / Barometric",
+  "category": "Procedure",
+  "description": "Sensor, WLAN, Bluetooth and barometric positioning."
+ },
+ {
+  "component": "Sidelink Positioning",
+  "category": "Procedure",
+  "description": "UE to UE ranging/positioning."
+ },
+ {
+  "component": "IMS Emergency Session",
+  "category": "Procedure",
+  "description": "IMS emergency call routed to a PSAP."
+ },
+ {
+  "component": "Emergency Services Fallback",
+  "category": "Procedure",
+  "description": "Emergency call moved from 5G to LTE."
+ },
+ {
+  "component": "Emergency Number Handling",
+  "category": "Procedure",
+  "description": "Emergency number lists and emergency call detection."
+ },
+ {
+  "component": "eCall over IMS",
+  "category": "Procedure",
+  "description": "Vehicle emergency call over IMS."
+ },
+ {
+  "component": "Public Warning Delivery",
+  "category": "Procedure",
+  "description": "Public warning broadcast (ETWS/CMAS/WEA)."
+ },
+ {
+  "component": "IMS Registration",
+  "category": "Procedure",
+  "description": "UE registers with IMS."
+ },
+ {
+  "component": "IMS Voice/Video Call Setup",
+  "category": "Procedure",
+  "description": "VoNR/VoLTE call setup."
+ },
+ {
+  "component": "P-CSCF Discovery",
+  "category": "Procedure",
+  "description": "UE learns the P-CSCF address."
+ },
+ {
+  "component": "SMS over NAS",
+  "category": "Procedure",
+  "description": "SMS carried in NAS signalling."
+ },
+ {
+  "component": "Event Exposure / Monitoring",
+  "category": "Procedure",
+  "description": "External apps subscribe to network events."
+ },
+ {
+  "component": "AF Traffic Influence",
+  "category": "Procedure",
+  "description": "App steers traffic routing (e.g. to edge)."
+ },
+ {
+  "component": "NWDAF Analytics",
+  "category": "Procedure",
+  "description": "Requesting network analytics."
+ },
+ {
+  "component": "Converged Charging",
+  "category": "Procedure",
+  "description": "Usage reporting and quota management."
+ },
+ {
+  "component": "Untrusted Non-3GPP Access Registration",
+  "category": "Procedure",
+  "description": "Registration over untrusted Wi-Fi via the N3IWF."
+ },
+ {
+  "component": "Trusted Non-3GPP Access Registration",
+  "category": "Procedure",
+  "description": "Registration over trusted Wi-Fi via the TNGF."
+ },
+ {
+  "component": "Edge Application Discovery & Relocation",
+  "category": "Procedure",
+  "description": "Finding and relocating edge application servers."
+ },
+ {
+  "component": "5G ProSe",
+  "category": "Procedure",
+  "description": "Direct UE discovery, communication and relay."
+ },
+ {
+  "component": "V2X Communication",
+  "category": "Procedure",
+  "description": "Vehicle communication (V2V, V2I)."
+ },
+ {
+  "component": "5G MBS Session",
+  "category": "Procedure",
+  "description": "Multicast/broadcast sessions."
+ },
+ {
+  "component": "MCPTT Call",
+  "category": "Procedure",
+  "description": "Mission-critical push-to-talk calls."
+ }
+]

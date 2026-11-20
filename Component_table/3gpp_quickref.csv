@@ -1,0 +1,332 @@
+component,category,description
+UE,Network entity,User Equipment: the subscriber device (ME + USIM).
+ME,Network entity,"Mobile Equipment: UE hardware, identified by PEI/IMEI."
+USIM,Network entity,"Universal Subscriber Identity Module: holds SUPI/IMSI, key K, SUCI public key."
+5G-RG,Network entity,5G Residential Gateway: home gateway acting as a UE over wireline or FWA.
+N5CW device,Network entity,"Non-5G-capable Wi-Fi device, served via the TWIF."
+NG-RAN,Network entity,"Next Generation RAN: the 5G radio access network (gNBs, ng-eNBs)."
+gNB,Network entity,Next Generation NodeB: 5G NR base station.
+gNB-CU,Network entity,"gNB Central Unit: hosts RRC, SDAP, PDCP; controls DUs."
+gNB-CU-CP,Network entity,gNB-CU control plane: RRC and control-plane PDCP.
+gNB-CU-UP,Network entity,gNB-CU user plane: SDAP and user-plane PDCP.
+gNB-DU,Network entity,"gNB Distributed Unit: hosts RLC, MAC, PHY."
+ng-eNB,Network entity,LTE base station connected to the 5G Core.
+en-gNB,Network entity,NR secondary node in EN-DC (non-standalone 5G).
+IAB-node,Network entity,Integrated Access and Backhaul node: relay with wireless NR backhaul.
+IAB-donor,Network entity,gNB providing the network connection for IAB-nodes.
+TRP,Network entity,Transmission Reception Point: antenna site sending PRS / measuring SRS for positioning.
+NTN,Network entity,Non-Terrestrial Network: satellite/HAPS-based NR or IoT access.
+eNB,Network entity,Evolved NodeB: LTE base station.
+UTRAN,Network entity,Legacy 3G radio access (NodeB/RNC).
+GERAN,Network entity,Legacy 2G radio access (BTS/BSC).
+AMF,Network entity,"Access and Mobility Management Function: registration, mobility, paging, NAS termination."
+SEAF,Network entity,Security Anchor Function (in AMF): holds the anchor key after authentication.
+SMF,Network entity,"Session Management Function: PDU sessions, IP allocation, UPF control."
+UPF,Network entity,User Plane Function: forwards and processes user data traffic.
+PCF,Network entity,"Policy Control Function: QoS, charging, mobility and UE (URSP) policies."
+UDM,Network entity,"Unified Data Management: subscription data, auth vectors, SUCI de-concealment."
+ARPF,Network entity,"Authentication credential Repository and Processing Function (in UDM): stores K, makes auth vectors."
+SIDF,Network entity,Subscription Identifier De-concealing Function (in UDM): SUCI to SUPI.
+UDR,Network entity,"Unified Data Repository: database for subscription, policy and exposure data."
+UDSF,Network entity,Unstructured Data Storage Function: stores NF context data.
+AUSF,Network entity,Authentication Server Function: runs 5G AKA / EAP-AKA' for the home network.
+NRF,Network entity,"Network Repository Function: NF registration, discovery, access tokens."
+NSSF,Network entity,Network Slice Selection Function: picks slices and the serving AMF set.
+NEF,Network entity,Network Exposure Function: exposes network events/capabilities to external apps.
+NWDAF,Network entity,Network Data Analytics Function: network analytics and ML predictions.
+AF,Network entity,"Application Function: application interacting with the core (QoS, routing)."
+SCP,Network entity,Service Communication Proxy: routes signalling between NFs.
+SEPP,Network entity,Security Edge Protection Proxy: secures roaming signalling between operators.
+N3IWF,Network entity,Non-3GPP InterWorking Function: gateway for untrusted Wi-Fi (IPsec).
+TNGF,Network entity,Trusted Non-3GPP Gateway Function: gateway for trusted Wi-Fi.
+TNAP,Network entity,Trusted Non-3GPP Access Point: Wi-Fi AP in a trusted access network.
+TWIF,Network entity,Trusted WLAN Interworking Function: serves non-5G-capable Wi-Fi devices.
+W-AGF,Network entity,Wireline Access Gateway Function: connects fixed broadband to 5GC.
+NSSAAF,Network entity,Network Slice-Specific Authentication and Authorization Function: slice auth via external AAA.
+NSACF,Network entity,Network Slice Admission Control Function: caps UEs/sessions per slice.
+CHF,Network entity,Charging Function: online/offline charging and quotas.
+SMSF,Network entity,Short Message Service Function: SMS over NAS.
+LMF,Network entity,Location Management Function: 5G positioning server; computes UE location.
+GMLC,Network entity,Gateway Mobile Location Centre: entry point for location requests (incl. PSAPs).
+LRF,Network entity,Location Retrieval Function: location/routing info for IMS emergency calls.
+5G-EIR,Network entity,Equipment Identity Register: checks IMEI/PEI against blocklists.
+BSF,Network entity,Binding Support Function: maps PDU sessions to their PCF.
+UCMF,Network entity,UE radio Capability Management Function: stores radio capability IDs.
+AAnF,Network entity,AKMA Anchor Function: application keys from 5G authentication.
+DCCF,Network entity,Data Collection Coordination Function: coordinates analytics data collection.
+ADRF,Network entity,Analytics Data Repository Function: stores analytics data and ML models.
+MFAF,Network entity,Messaging Framework Adaptor Function: delivers collected data to consumers.
+EASDF,Network entity,Edge Application Server Discovery Function: DNS steering to edge servers.
+TSCTSF,Network entity,Time Sensitive Communication and Time Synchronization Function.
+TSN AF,Network entity,TSN Application Function: interfaces 5GS with IEEE TSN networks.
+MB-SMF,Network entity,Multicast/Broadcast SMF: manages MBS sessions.
+MB-UPF,Network entity,Multicast/Broadcast UPF: user plane for MBS traffic.
+MBSF,Network entity,Multicast/Broadcast Service Function: MBS service layer.
+5G DDNMF,Network entity,5G Direct Discovery Name Management Function: ProSe discovery codes.
+ProSe AS,Network entity,ProSe Application Server: proximity services.
+V2X AS,Network entity,V2X Application Server: vehicle communication services.
+DN,Network entity,"Data Network: external network (internet, IMS, enterprise) reached via the UPF."
+CBCF,Network entity,Cell Broadcast Centre Function: delivers public warnings in 5G.
+PWS-IWF,Network entity,PWS InterWorking Function: connects a legacy CBC to 5GC.
+CBC,Network entity,Cell Broadcast Centre: delivers public warnings in LTE.
+CBE,Network entity,Cell Broadcast Entity: alert originator (e.g. government agency).
+SMS-SC,Network entity,SMS Service Centre: stores and forwards SMS.
+LCS Client,Network entity,Location Services client: app/entity requesting a UE's location.
+PSAP,Network entity,Public Safety Answering Point: emergency call centre.
+SLP,Network entity,SUPL Location Platform (OMA): user-plane location server.
+LI functions,Network entity,"Lawful Interception functions (ADMF, POI, MDF): legal intercept."
+EAS,Network entity,Edge Application Server: app instance at the network edge.
+EES,Network entity,Edge Enabler Server: edge discovery/registration services.
+ECS,Network entity,Edge Configuration Server: provides edge network config to UEs.
+EEC,Network entity,Edge Enabler Client: UE-side edge client.
+MCPTT server,Network entity,Mission Critical Push-To-Talk server: public safety PTT.
+MCData server,Network entity,Mission Critical Data server: MC messaging and file sharing.
+MCVideo server,Network entity,Mission Critical Video server.
+SEAL servers,Network entity,"Service Enabler Architecture Layer: common identity, key, group, location services."
+MME,Network entity,Mobility Management Entity: LTE core control node.
+S-GW,Network entity,Serving Gateway: LTE user-plane mobility anchor.
+P-GW,Network entity,PDN Gateway: LTE gateway to external networks.
+HSS,Network entity,Home Subscriber Server: LTE/IMS subscriber database.
+PCRF,Network entity,Policy and Charging Rules Function: LTE policy.
+SCEF,Network entity,Service Capability Exposure Function: LTE exposure (IoT).
+E-SMLC,Network entity,Evolved Serving Mobile Location Centre: LTE positioning server.
+MSC,Network entity,"Mobile Switching Centre: legacy circuit-switched core (CSFB, SRVCC)."
+P-CSCF,Network entity,Proxy CSCF: UE's first IMS contact; detects emergency calls.
+I-CSCF,Network entity,"Interrogating CSCF: home IMS entry point, finds the S-CSCF."
+S-CSCF,Network entity,Serving CSCF: IMS registrar and session control.
+E-CSCF,Network entity,Emergency CSCF: routes IMS emergency calls to PSAPs.
+IBCF,Network entity,Interconnection Border Control Function: IMS border / SBC.
+BGCF,Network entity,Breakout Gateway Control Function: routes calls to the PSTN.
+MGCF,Network entity,Media Gateway Control Function: IMS to PSTN interworking.
+MRF,Network entity,"Media Resource Function: conferencing, announcements."
+MMTel AS,Network entity,Multimedia Telephony Application Server: IMS telephony services.
+SCC AS,Network entity,Service Centralization and Continuity AS: anchors calls for SRVCC.
+ATCF/ATGW,Network entity,Access Transfer Control Function / Gateway: speeds up SRVCC.
+EATF,Network entity,Emergency Access Transfer Function: SRVCC for emergency calls.
+Uu,Interface,UE to base station radio interface.
+PC5,Interface,"UE to UE sidelink (ProSe, V2X)."
+N1,Interface,UE to AMF: NAS signalling.
+N2,Interface,RAN to AMF: control plane (NGAP).
+N3,Interface,RAN to UPF: user plane (GTP-U).
+N4,Interface,SMF to UPF: user-plane control (PFCP).
+N6,Interface,UPF to Data Network.
+N9,Interface,UPF to UPF user plane.
+N19,Interface,UPF to UPF tunnel for 5G LAN groups.
+NWu,Interface,UE to N3IWF: IPsec tunnel over untrusted Wi-Fi.
+NWt,Interface,UE to TNGF: tunnel over trusted Wi-Fi.
+Y2,Interface,Untrusted Wi-Fi network to N3IWF.
+Xn,Interface,"gNB to gNB: handover, dual connectivity."
+F1,Interface,gNB-CU to gNB-DU.
+E1,Interface,gNB-CU-CP to gNB-CU-UP.
+X2,Interface,"eNB to eNB / eNB to en-gNB (LTE, NSA)."
+N5,Interface,PCF to AF: application QoS requests.
+N7,Interface,SMF to PCF: session policy.
+N8,Interface,AMF to UDM: subscription data.
+N10,Interface,SMF to UDM: session subscription data.
+N11,Interface,AMF to SMF: PDU session control.
+N12,Interface,AMF to AUSF: authentication.
+N13,Interface,AUSF to UDM: authentication vectors.
+N14,Interface,AMF to AMF: UE context transfer.
+N15,Interface,AMF to PCF: mobility and UE policy.
+N16,Interface,SMF to SMF: roaming / intermediate SMF.
+N17,Interface,AMF to 5G-EIR: IMEI check.
+N18,Interface,NF to UDSF: context storage.
+N20,Interface,AMF to SMSF: SMS.
+N21,Interface,SMSF to UDM: SMS subscription.
+N22,Interface,AMF to NSSF: slice selection.
+N23,Interface,PCF to NWDAF: analytics for policy.
+N24,Interface,Visited PCF to home PCF (roaming).
+N27,Interface,Visited NRF to home NRF (roaming).
+N28,Interface,PCF to CHF: spending limits.
+N29,Interface,NEF to SMF.
+N30,Interface,PCF to NEF.
+N31,Interface,Visited NSSF to home NSSF (roaming).
+N33,Interface,NEF to AF: northbound exposure APIs.
+N34,Interface,NSSF to NWDAF.
+N35,Interface,UDM to UDR.
+N36,Interface,PCF to UDR.
+N37,Interface,NEF to UDR.
+N40,Interface,SMF to CHF: session charging.
+N50,Interface,AMF to CBCF: public warnings.
+N51,Interface,AMF to NEF.
+N52,Interface,NEF to UDM.
+N58,Interface,AMF to NSSAAF: slice authentication.
+N59,Interface,UDM to NSSAAF.
+N26,Interface,MME to AMF: 5G-LTE interworking.
+N32,Interface,SEPP to SEPP: secure roaming signalling.
+NL1,Interface,AMF to LMF: positioning.
+NL2,Interface,AMF to GMLC: location requests.
+NL3,Interface,GMLC to GMLC (roaming).
+NL5,Interface,NEF to GMLC: location exposure.
+NL6,Interface,UDM to GMLC: serving AMF and privacy lookup.
+Le,Interface,LCS client / PSAP to GMLC (MLP).
+SLs,Interface,MME to E-SMLC: LTE positioning.
+SLg,Interface,MME to GMLC: LTE location.
+SLh,Interface,HSS to GMLC.
+S1-MME,Interface,eNB to MME: control plane.
+S1-U,Interface,eNB to S-GW: user plane.
+S5/S8,Interface,S-GW to P-GW (S8 when roaming).
+S6a,Interface,MME to HSS: subscription and authentication.
+S10,Interface,MME to MME.
+S11,Interface,MME to S-GW.
+SGi,Interface,P-GW to external network.
+Gx,Interface,P-GW to PCRF: policy rules.
+Rx,Interface,AF / P-CSCF to PCRF: QoS requests.
+SGs,Interface,"MME to MSC: CS fallback, SMS."
+Sv,Interface,MME to MSC: SRVCC.
+SBc,Interface,MME to CBC: public warnings (LTE).
+T8,Interface,SCEF to application server API.
+Gm,Interface,UE to P-CSCF: SIP.
+Mw,Interface,CSCF to CSCF: SIP.
+Cx,Interface,CSCF to HSS: IMS registration and authentication.
+Sh,Interface,IMS application server to HSS.
+ISC,Interface,S-CSCF to application server.
+Ml,Interface,E-CSCF to LRF: emergency routing and location.
+5GMM,Protocol,"5G NAS Mobility Management: registration, security, mobility."
+5GSM,Protocol,5G NAS Session Management: PDU sessions.
+EMM,Protocol,LTE NAS mobility management.
+ESM,Protocol,LTE NAS session management.
+NR RRC,Protocol,"NR Radio Resource Control: radio connection, mobility, broadcast."
+LTE RRC,Protocol,LTE Radio Resource Control.
+SDAP,Protocol,Service Data Adaptation Protocol: maps QoS flows to radio bearers.
+PDCP,Protocol,"Packet Data Convergence Protocol: radio ciphering, integrity, compression."
+RLC,Protocol,"Radio Link Control: segmentation, retransmission (ARQ)."
+MAC,Protocol,"Medium Access Control: scheduling, HARQ, random access."
+NR PHY,Protocol,NR physical layer.
+BAP,Protocol,Backhaul Adaptation Protocol: IAB routing.
+PC5 signalling,Protocol,Sidelink signalling (PC5-S / PC5-RRC).
+NGAP,Protocol,NG Application Protocol: RAN to AMF signalling.
+XnAP,Protocol,Xn Application Protocol: gNB to gNB signalling.
+F1AP,Protocol,F1 Application Protocol: CU to DU signalling.
+E1AP,Protocol,E1 Application Protocol: CU-CP to CU-UP signalling.
+S1AP,Protocol,S1 Application Protocol: eNB to MME signalling.
+X2AP,Protocol,X2 Application Protocol: eNB to eNB signalling.
+NRPPa,Protocol,NR Positioning Protocol A: RAN to LMF positioning.
+LPPa,Protocol,LTE Positioning Protocol A: eNB to E-SMLC.
+LPP,Protocol,LTE Positioning Protocol: UE to location server (LTE and NR).
+LCS-AP,Protocol,LCS Application Protocol: MME to E-SMLC.
+ELP,Protocol,EPC LCS Protocol: MME to GMLC.
+MLP,Protocol,Mobile Location Protocol (OMA): client / PSAP to GMLC.
+SUPL,Protocol,Secure User Plane Location (OMA): IP-based positioning.
+PFCP,Protocol,Packet Forwarding Control Protocol: SMF controls the UPF.
+GTP-U,Protocol,GTP user plane: tunnels user data.
+GTPv2-C,Protocol,GTPv2 control plane: LTE core signalling and N26.
+HTTP/2,Protocol,HTTP/2: transport for 5G core APIs.
+SBI (JSON/OpenAPI),Protocol,5G core REST/JSON APIs (OpenAPI).
+SCTP,Protocol,Stream Control Transmission Protocol: transport for RAN signalling.
+IP,Protocol,IPv4/IPv6 with UDP/TCP.
+TLS,Protocol,Transport Layer Security: protects core APIs and N32.
+PRINS,Protocol,PRotocol for N32 INterconnect Security: application-layer roaming protection.
+OAuth 2.0,Protocol,OAuth 2.0: token-based NF authorization.
+IPsec,Protocol,IPsec: IP-layer tunnel security.
+IKEv2,Protocol,Internet Key Exchange v2: sets up IPsec tunnels.
+EAP,Protocol,Extensible Authentication Protocol framework.
+EAP-AKA',Protocol,EAP-AKA': EAP-based 5G primary authentication.
+NEA/NIA,Protocol,NEA/NIA: 5G ciphering and integrity algorithms.
+Diameter,Protocol,Diameter: AAA signalling in LTE and IMS.
+SIP,Protocol,Session Initiation Protocol: IMS call/session signalling.
+SDP,Protocol,Session Description Protocol: media negotiation.
+RTP/RTCP,Protocol,Real-time Transport Protocol: voice/video media.
+SM-CP/SM-RP,Protocol,SMS transport protocols (SM-CP/SM-RP).
+SGsAP,Protocol,SGs Application Part: MME to MSC.
+SBc-AP,Protocol,SBc Application Part: CBC to MME warnings.
+Initial Registration,Procedure,"UE registers with the 5G core (authentication, security, slices)."
+Mobility Registration Update,Procedure,Re-registration after leaving the tracking area list.
+Periodic Registration Update,Procedure,Timer-driven (T3512) registration to confirm reachability.
+Emergency Registration,Procedure,Registration for emergency services only.
+Deregistration,Procedure,UE- or network-initiated detach.
+Service Request,Procedure,Idle UE resumes connection and user plane.
+Paging,Procedure,Network locates an idle or inactive UE.
+AN Release,Procedure,Releases the RAN connection; UE goes idle.
+UE Configuration Update,Procedure,"Network updates UE settings (GUTI, NSSAI, etc.)."
+MICO / eDRX / PSM,Procedure,MICO / eDRX / PSM power-saving modes.
+Identification,Procedure,"Network requests UE identity (SUCI, IMEI)."
+ME Identity Check,Procedure,IMEI check against the 5G-EIR.
+RRC Connection Establishment,Procedure,Establishes the RRC connection.
+RRC_INACTIVE / RRC Resume,Procedure,RRC_INACTIVE state and RRC resume.
+RRC Reconfiguration,Procedure,"Modifies radio bearers, measurements, handover."
+RRC Release,Procedure,Releases or suspends the RRC connection.
+RRC Re-establishment,Procedure,Recovers after radio link failure.
+System Information Broadcast,Procedure,MIB/SIB broadcast of cell information.
+Random Access,Procedure,RACH: initial uplink access.
+Cell Selection / Reselection,Procedure,Idle UE chooses which cell to camp on.
+Measurement Reporting,Procedure,UE reports radio measurements.
+UE Capability Transfer,Procedure,UE reports its radio capabilities.
+AS Security Mode Command,Procedure,Activates radio (AS) encryption and integrity.
+Dual Connectivity (EN-DC / MR-DC),Procedure,EN-DC / MR-DC: two base stations at once (incl. NSA).
+Xn Handover,Procedure,Handover directly between gNBs.
+N2 Handover,Procedure,Handover via the AMF.
+Conditional Handover,Procedure,UE executes a pre-configured handover.
+5GS-EPS Handover (N26),Procedure,5G to LTE connected handover via N26.
+5GS-EPS Idle Mobility / Interworking,Procedure,5G to LTE idle-mode mobility.
+EPS Attach,Procedure,LTE registration.
+Tracking Area Update,Procedure,LTE location update.
+SRVCC / 5G-SRVCC,Procedure,Moves an IMS voice call to 2G/3G circuit switched.
+CS Fallback,Procedure,LTE UE falls back to 2G/3G for voice.
+EPS Fallback for Voice,Procedure,5G voice call moved to VoLTE.
+PDU Session Establishment,Procedure,Sets up a data session.
+PDU Session Modification,Procedure,Changes session QoS.
+PDU Session Release,Procedure,Ends a data session.
+SSC Mode / UPF Relocation,Procedure,SSC modes: changing the session anchor UPF.
+ULCL / Branching Point,Procedure,Local traffic breakout (e.g. to edge).
+QoS Flow Management,Procedure,"5G QoS model (QoS flows, 5QI)."
+EPS Bearer / PDN Connectivity,Procedure,LTE default/dedicated bearers.
+Emergency PDU Session,Procedure,Data session for IMS emergency calls.
+AM Policy Association,Procedure,AMF gets mobility policy from the PCF.
+SM Policy Association,Procedure,SMF gets session policy (PCC rules) from the PCF.
+UE Policy Delivery (URSP),Procedure,PCF sends URSP policies to the UE.
+Policy Authorization (AF session),Procedure,Application/IMS requests QoS from the PCF.
+5G AKA,Procedure,5G AKA authentication.
+EAP-AKA' Authentication,Procedure,EAP-AKA' authentication.
+EAP-TLS Authentication,Procedure,Certificate-based authentication (private networks).
+SUCI Concealment,Procedure,Encrypts the SUPI as SUCI (ECIES).
+NAS Security Mode Command,Procedure,Activates NAS encryption and integrity.
+5G Key Hierarchy & Derivation,Procedure,"Derivation of 5G keys, incl. at handover."
+Secondary Authentication,Procedure,External DN-AAA authentication of a session.
+NSSAA,Procedure,Slice-specific authentication.
+AKMA,Procedure,Application keys derived from 5G authentication.
+SoR / UPU Protection,Procedure,Protected roaming steering and UE parameter updates.
+SBA Security (mTLS & OAuth 2.0),Procedure,Mutual TLS and OAuth 2.0 between core functions.
+N32 Inter-PLMN Security,Procedure,Securing roaming signalling between SEPPs.
+EPS AKA,Procedure,LTE authentication.
+False Base Station Detection,Procedure,Detecting fake base stations from UE reports.
+Lawful Interception,Procedure,Legal interception of communications.
+Network Slice Selection,Procedure,Choosing slices (NSSAI) for a UE.
+Network Slice Admission Control,Procedure,Per-slice admission limits.
+NF Registration,Procedure,NF registers with the NRF.
+NF Discovery,Procedure,NF finds other NFs via the NRF.
+5GC-MT-LR,Procedure,External request for a UE's location.
+5GC-MO-LR,Procedure,UE requests its own location.
+5GC-NI-LR,Procedure,Network-triggered location for emergency calls.
+Deferred 5GC-MT-LR,Procedure,Periodic or event-based location reporting.
+EPC Location Procedures,Procedure,LTE location procedures.
+NG-RAN Positioning Procedure,Procedure,LMF positions the UE via LPP/NRPPa.
+Location Privacy,Procedure,User privacy check for location requests.
+A-GNSS Positioning,Procedure,Assisted satellite (GPS/GNSS) positioning.
+E-CID Positioning,Procedure,Cell-ID based positioning.
+DL-TDOA / OTDOA,Procedure,Downlink time-difference positioning.
+UL-TDOA,Procedure,Uplink time-difference positioning.
+Multi-RTT,Procedure,Round-trip-time positioning.
+DL-AoD / UL-AoA,Procedure,Angle-based positioning.
+Sensor / WLAN / Bluetooth / TBS / Barometric,Procedure,"Sensor, WLAN, Bluetooth and barometric positioning."
+Sidelink Positioning,Procedure,UE to UE ranging/positioning.
+IMS Emergency Session,Procedure,IMS emergency call routed to a PSAP.
+Emergency Services Fallback,Procedure,Emergency call moved from 5G to LTE.
+Emergency Number Handling,Procedure,Emergency number lists and emergency call detection.
+eCall over IMS,Procedure,Vehicle emergency call over IMS.
+Public Warning Delivery,Procedure,Public warning broadcast (ETWS/CMAS/WEA).
+IMS Registration,Procedure,UE registers with IMS.
+IMS Voice/Video Call Setup,Procedure,VoNR/VoLTE call setup.
+P-CSCF Discovery,Procedure,UE learns the P-CSCF address.
+SMS over NAS,Procedure,SMS carried in NAS signalling.
+Event Exposure / Monitoring,Procedure,External apps subscribe to network events.
+AF Traffic Influence,Procedure,App steers traffic routing (e.g. to edge).
+NWDAF Analytics,Procedure,Requesting network analytics.
+Converged Charging,Procedure,Usage reporting and quota management.
+Untrusted Non-3GPP Access Registration,Procedure,Registration over untrusted Wi-Fi via the N3IWF.
+Trusted Non-3GPP Access Registration,Procedure,Registration over trusted Wi-Fi via the TNGF.
+Edge Application Discovery & Relocation,Procedure,Finding and relocating edge application servers.
+5G ProSe,Procedure,"Direct UE discovery, communication and relay."
+V2X Communication,Procedure,"Vehicle communication (V2V, V2I)."
+5G MBS Session,Procedure,Multicast/broadcast sessions.
+MCPTT Call,Procedure,Mission-critical push-to-talk calls.
